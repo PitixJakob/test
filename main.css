@@ -13,6 +13,10 @@ header h1{
     display: inline;
 }
 
+nav {
+    display: inline;
+}
+
 nav ul{
     margin: 0;
     padding: 0 0 0 15px;
@@ -29,4 +33,26 @@ nav ul li {
 
 nav ul li a {
     color: white;
+}
+
+.row:after{
+
+}
+
+.col{
+    background: #400;
+    border-radius: 5px;
+    color: white;
+    padding: .5%;
+    float:left;
+    margin: .5%;
+    width: 31%;
+}
+
+.darkBG {
+    background: #999;
+}
+
+.darkerBG {
+    background: #333;
 }
