@@ -54,5 +54,8 @@ nav ul li a {
 }
 
 .darkerBG {
+    background: #666;
+}
+.darkestBG {
     background: #333;
 }
