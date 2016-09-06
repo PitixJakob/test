@@ -1,24 +1,32 @@
-body{
-  background: #999;
-  font-family: arial;
+body {
+    margin: 0;
 }
 
-h1, h2 {
-  color: #666;
+header{
+    background: #999;
+    color: white;
+    padding:15px 15px 0px 15px;
 }
 
-a{
-  color:green;
+header h1{
+    margin: 0;
+    display: inline;
 }
 
-p {
-  background: #666;
-  color: white;
-  padding: 50px 0px 100px 10px;
-
+nav ul{
+    margin: 0;
+    padding: 0 0 0 15px;
+    display: inline;
 }
 
-.secondary{
-  background: none;
-  color: blue;
+nav ul li {
+    background-color: black;
+    color: white;
+    display: inline-block;
+    list-style-type: none;
+    padding: 5px 15px;
+}
+
+nav ul li a {
+    color: white;
 }
