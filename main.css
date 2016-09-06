@@ -1,61 +1,29 @@
-body {
-    margin: 0;
-}
-
-header{
-    background: #999;
-    color: white;
-    padding:15px 15px 0px 15px;
-}
-
-header h1{
-    margin: 0;
-    display: inline;
-}
-
-nav {
-    display: inline;
-}
-
-nav ul{
-    margin: 0;
-    padding: 0 0 0 15px;
-    display: inline;
-}
-
-nav ul li {
-    background-color: black;
-    color: white;
-    display: inline-block;
-    list-style-type: none;
-    padding: 5px 15px;
-}
-
-nav ul li a {
-    color: white;
-}
-
-.row:after{
-
-}
-
-.col{
-    background: #400;
+.myPanel {
+    border: 1px solid #542C1E;
     border-radius: 5px;
-    color: white;
-    padding: .5%;
-    float:left;
-    margin: .5%;
-    width: 31%;
+    box-shadow: 0px 0px 4px #ccc;
+    margin: 3%;
 }
 
-.darkBG {
-    background: #999;
+.myPanel .heading {
+    background: #DB6037;
+    border-radius: 5px 5px 0 0;
+    color: #542C1E;
+    padding: 10px 20px;
 }
 
-.darkerBG {
-    background: #666;
+.myPanel .body {
+    padding: 10px 20px;
 }
-.darkestBG {
-    background: #333;
+
+.myPanel .showOnHover{
+    display: none;
+}
+
+.myPanel:hover .showOnHover{
+    display: inline-block;
+}
+
+.myPanel:hover {
+    box-shadow: 0px 0px 8px #666;
 }
