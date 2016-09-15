@@ -4,7 +4,7 @@
 
 
 function go(name) {
-    alert(name);
+    //DO STUFF
 }
 
 go("Jakob");
@@ -16,3 +16,11 @@ go(test)
 for (var i=0; i < 100; i++){
 
 }
+
+var numOne = document.getElementById("Hello")
+var numTwo = document.getElementById("Todo")
+var numThree = document.getElementById("What")
+
+numOne.addEventListener("mousemove", function () {
+    console.log("hi")
+})
