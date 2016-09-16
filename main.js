@@ -1,30 +1,13 @@
-var checkList = document.getElementById("checklist");
-
-var items = checkList.querySelectorAll("li");
-var inputs = checkList.querySelectorAll("input");
-
-for (var i = 0; i < items.length; i++) {
-    items[i].addEventListener("click", clicked);
-    inputs[i].addEventListener("blur", updateItem);
-    inputs[i].addEventListener("keypress", itemKeyPress);
-}
+$(function () {
 
 
+    var panels = $(".panel");
+    var panel2 = $("#Todo");
+    var panel3 = $("#What");
 
-function clicked() {
-    this.className = "edit";
-    var input = this.querySelector("input");
-    input.focus();
-    input.setSelectionRange(0, input.value.length)
-}
+    panels.on('click', function () {
+        var panelId = $(this).attr("data-panel")
+        console.log(panelId)
+    });
 
-function updateItem(){
-    this.previousElementSibling.innerHTML = this.value;
-    this.parentNode.className = "";
-}
-
-function itemKeyPress(event) {
-    if (event.which == 13){
-        updateItem.call(this);
-    }
-}
+});
