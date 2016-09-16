@@ -1,26 +1,30 @@
-/**
- * Created by jakob on 14-09-16.
- */
+var checkList = document.getElementById("checklist");
 
+var items = checkList.querySelectorAll("li");
+var inputs = checkList.querySelectorAll("input");
 
-function go(name) {
-    //DO STUFF
+for (var i = 0; i < items.length; i++) {
+    items[i].addEventListener("click", clicked);
+    inputs[i].addEventListener("blur", updateItem);
+    inputs[i].addEventListener("keypress", itemKeyPress);
 }
 
-go("Jakob");
 
-var test = [1, 2 ,3 ,4];
 
-go(test);
-
-for (var i=0; i < 100; i++){
-
+function clicked() {
+    this.className = "edit";
+    var input = this.querySelector("input");
+    input.focus();
+    input.setSelectionRange(0, input.value.length)
 }
 
-var numOne = document.getElementById("Hello");
-var numTwo = document.getElementById("Todo");
-var numThree = document.getElementById("What");
+function updateItem(){
+    this.previousElementSibling.innerHTML = this.value;
+    this.parentNode.className = "";
+}
 
-numOne.addEventListener("mousemove", function () {
-    console.log("hi")
-});
+function itemKeyPress(event) {
+    if (event.which == 13){
+        updateItem.call(this);
+    }
+}

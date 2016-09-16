@@ -1,29 +1,11 @@
-.myPanel {
-    border: 1px solid #542C1E;
-    border-radius: 5px;
-    box-shadow: 0px 0px 4px #ccc;
-    margin: 3%;
-}
-
-.myPanel .heading {
-    background: #DB6037;
-    border-radius: 5px 5px 0 0;
-    color: #542C1E;
-    padding: 10px 20px;
-}
-
-.myPanel .body {
-    padding: 10px 20px;
-}
-
-.myPanel .showOnHover{
+li input {
     display: none;
 }
 
-.myPanel:hover .showOnHover{
-    display: inline-block;
+li.edit span {
+    display: none;
 }
 
-.myPanel:hover {
-    box-shadow: 0px 0px 8px #666;
+li.edit input {
+    display: initial;
 }
